@@ -1,6 +1,6 @@
 /*
 ===========================================================================================
-DDL Script: Database Exploration
+Database Exploration
 ===========================================================================================
 
 Script Purpose: 
@@ -28,5 +28,6 @@ SELECT * FROM INFORMATION_SCHEMA.COLUMNS
 -- ===========================================================================================
 SELECT * FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_NAME = 'dim_customers'
+
 
 
