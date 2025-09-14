@@ -6,8 +6,8 @@ Analysis Script: Performance Analysis
 Script Purpose: 
     This script analyzes the yearly performance of products by comparing their sales 
     against two benchmarks:
-        1. The product’s average sales across all years.
-        2. The product’s sales in the previous year.
+        1. The productâ€™s average sales across all years.
+        2. The productâ€™s sales in the previous year.
     
     Using window functions and conditional logic, we classify performance as above/below 
     average and increasing/decreasing compared to the prior year.
@@ -62,7 +62,7 @@ ELSE 'Avg'
 END AS avg_change,
 
 -- ==============================================================================================
--- Step 3: Compare Current Sales to Previous Year’s Sales
+-- Step 3: Compare Current Sales to Previous Yearâ€™s Sales
 --         Track year-over-year sales change using LAG()
 -- ==============================================================================================
 LAG(current_sales) OVER (PARTITION BY product_name ORDER BY order_year) AS pre_year_sales,
